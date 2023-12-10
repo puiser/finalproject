@@ -20,7 +20,7 @@ int huoneen_varaus(int huone_lkm) { // Huoneen varauksen aliohjelma
     std::cin >> varaukseen;
 
     int varaus {0};
-    //varaus = 0; /// varmaan turha?
+
 
     switch (varaukseen) {
         case 'k':
@@ -56,7 +56,7 @@ int huoneen_varaus(int huone_lkm) { // Huoneen varauksen aliohjelma
             // Siivotaan syötevirta 
             std::cin.clear();
             std::cin.ignore(256, '\n');
-            
+
             std::cout << "Virheellinen syöte.";
             std::cout << "\n";
             break;
