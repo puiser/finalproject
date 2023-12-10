@@ -53,6 +53,10 @@ int huoneen_varaus(int huone_lkm) { // Huoneen varauksen aliohjelma
             break;
         
         default:
+            // Siivotaan syötevirta 
+            std::cin.clear();
+            std::cin.ignore(256, '\n');
+            
             std::cout << "Virheellinen syöte.";
             std::cout << "\n";
             break;
@@ -77,6 +81,7 @@ int oiden_varaus(int yot) { // Aliohjelma öiden varaukselle
     else {
         std::cout << "Virheellinen syöte!";
         std::cout <<"\n";
+        yot_lkm = 0;
     }
 
     return yot_lkm;        
