@@ -99,9 +99,10 @@ int main() { // Pääohjelma
     const int hinta_pienin{ 80};
     const int hinta_suurin{ 100 };
 
-    std::random_device rd;  // laitteiston satunnaislaite
-    std::default_random_engine moottori{ rd() };  // tuottaa satunnaislukuja
-    // em. satunnaislaitteen avulla
+    // Satunnaislukugeneraattori
+    std::random_device rd;  
+    std::default_random_engine moottori{ rd() };  
+    
     std::uniform_int_distribution huone_vali{huone_pienin, huone_suurin}; // Arpoo huoneen välin
     std::uniform_int_distribution hinta_vali{hinta_pienin, hinta_suurin}; // Arpoo hinnan välin
    
